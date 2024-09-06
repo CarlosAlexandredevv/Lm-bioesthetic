@@ -73,3 +73,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.active {
+  color: #d8b38d;
+}
