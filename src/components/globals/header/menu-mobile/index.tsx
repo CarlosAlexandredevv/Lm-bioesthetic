@@ -10,10 +10,11 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+  import logosheet from '../../../../assets/logosheet.png'
 export function MenuMobile() {
   return (
     <header className="w-full h-16 bg-sand flex items-center justify-between px-5 shadow-md">
-        <img src="public\logo.png" alt="Logo" className="w-9" />     
+        <img src="logo.png" alt="Logo" className="w-9" />     
 <Sheet>
   <SheetTrigger>
     <Menu size={32} className="text-burgundy" />
@@ -21,7 +22,7 @@ export function MenuMobile() {
 
   <SheetContent side={"left"} className="flex flex-col gap-8 bg-burgundy border-none">
     <div>
-  <img src="src\assets\logosheet.png" alt="Logo" className="w-9" />  
+  <img src={logosheet} alt="Logo" className="w-9" />  
   </div> 
   <div className="flex flex-col gap-3">
     <a className="text-2xl font-medium font-adamBold text-sand" href="">Home</a>
