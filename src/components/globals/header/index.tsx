@@ -1,6 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import { MenuMobile } from './menu-mobile';
 import { Phone } from 'lucide-react';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from '@/components/ui/navigation-menu';
 
 export function Header() {
   const mensagem =
@@ -16,31 +23,83 @@ export function Header() {
           <nav className="flex items-center gap-5">
             <NavLink
               to="/"
-              className="flex items-center gap-2 text-xl font-medium font-adamBold text-white"
+              className="flex items-center text-xl font-medium font-adamBold text-white"
             >
               Início
             </NavLink>
-            <NavLink
-              to="/produtos"
-              className="flex items-center gap-2 text-xl font-medium font-adamBold text-white"
-            >
-              Produtos
-            </NavLink>
-            <NavLink
-              to="/servicos"
-              className="flex items-center gap-2 text-xl font-medium font-adamBold text-white"
-            >
-              Procedimentos
-            </NavLink>
+
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>
+                    <a className="flex items-center gap-2 text-xl font-medium font-adamBold text-white">
+                      Produtos
+                    </a>
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="flex items-center flex-col gap-2 w-full px-2 py-3 bg-lightCream text-x text-burgundy font-medium font-adamBold">
+                    <NavLink
+                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-2 py-1 border-2 border-burgundy"
+                      to="/produtos/capilar"
+                    >
+                      Capilar
+                    </NavLink>
+                    <NavLink
+                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-2 py-1  border-2 border-burgundy"
+                      to="/produtos/facial"
+                    >
+                      Facial
+                    </NavLink>
+                    <NavLink
+                      className="hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-2 py-1  border-2 border-burgundy"
+                      to="/produtos/corporal"
+                    >
+                      Corporal
+                    </NavLink>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
+            <NavigationMenu>
+              <NavigationMenuList className="flex gap-5">
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>
+                    <a className="flex items-center gap-2 text-xl font-medium font-adamBold text-white">
+                      Procedimentos
+                    </a>
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="flex items-center flex-col gap-2 w-full px-4 py-3 bg-lightCream text-x text-burgundy font-medium font-adamBold">
+                    <NavLink
+                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-6 py-1 border-2 border-burgundy"
+                      to="/procedimentos/capilar"
+                    >
+                      Capilar
+                    </NavLink>
+                    <NavLink
+                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-6 py-1 border-2 border-burgundy"
+                      to="/produtos/facial"
+                    >
+                      Facial
+                    </NavLink>
+                    <NavLink
+                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-6 py-1 border-2 border-burgundy"
+                      to="/produtos/corporal"
+                    >
+                      Corporal
+                    </NavLink>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
             <NavLink
               to="/resultados"
-              className="flex items-center gap-2 text-xl font-medium font-adamBold text-white"
+              className="flex items-center text-xl font-medium font-adamBold text-white"
             >
               Resultados
             </NavLink>
             <NavLink
               to="/leilamenezes"
-              className="flex items-center gap-2 text-xl font-medium font-adamBold text-white"
+              className="flex items-center  text-xl font-medium font-adamBold text-white"
             >
               Leila Menezes
             </NavLink>
