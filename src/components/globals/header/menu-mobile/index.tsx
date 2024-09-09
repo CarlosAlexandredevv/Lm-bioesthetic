@@ -2,7 +2,6 @@ import {
   HeartHandshake,
   House,
   Menu,
-  Phone,
   ShoppingBasket,
   Stethoscope,
   Syringe,
@@ -148,7 +147,7 @@ export function MenuMobile() {
               href={mensagem}
               target="_blank"
             >
-              <Phone className="text-white" />
+              <img src="zap.svg" className="size-6" alt="" />
               <button className="text-xl font-medium font-adamBold text-white">
                 Fale conosco
               </button>
