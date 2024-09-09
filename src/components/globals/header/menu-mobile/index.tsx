@@ -149,9 +149,9 @@ export function MenuMobile() {
               target="_blank"
             >
               <Phone className="text-white" />
-              <p className="text-xl font-medium font-adamBold text-white">
+              <button className="text-xl font-medium font-adamBold text-white">
                 Fale conosco
-              </p>
+              </button>
             </a>
           </div>
         </SheetContent>

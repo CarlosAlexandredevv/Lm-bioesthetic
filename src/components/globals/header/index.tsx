@@ -23,7 +23,7 @@ export function Header() {
           <nav className="flex items-center gap-5">
             <NavLink
               to="/"
-              className="flex items-center text-xl font-medium font-adamBold text-white"
+              className="flex items-center text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300"
             >
               Início
             </NavLink>
@@ -32,7 +32,7 @@ export function Header() {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
-                    <a className="flex items-center gap-2 text-xl font-medium font-adamBold text-white">
+                    <a className="flex items-center gap-2 text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300">
                       Produtos
                     </a>
                   </NavigationMenuTrigger>
@@ -64,7 +64,7 @@ export function Header() {
               <NavigationMenuList className="flex gap-5">
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
-                    <a className="flex items-center gap-2 text-xl font-medium font-adamBold text-white">
+                    <a className="flex items-center gap-2 text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300">
                       Procedimentos
                     </a>
                   </NavigationMenuTrigger>
@@ -93,25 +93,25 @@ export function Header() {
             </NavigationMenu>
             <NavLink
               to="/resultados"
-              className="flex items-center text-xl font-medium font-adamBold text-white"
+              className="flex items-center text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300"
             >
               Resultados
             </NavLink>
             <NavLink
               to="/leilamenezes"
-              className="flex items-center  text-xl font-medium font-adamBold text-white"
+              className="flex items-center  text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300"
             >
               Leila Menezes
             </NavLink>
             <a
-              className="max-w-[225px] bg-green-600 p-2 rounded-lg flex justify-center items-center gap-2"
+              className="max-w-[225px] bg-green-600 p-2 rounded-lg flex justify-center items-center gap-2 hover:opacity-80 duration-300"
               href={mensagem}
               target="_blank"
             >
               <Phone className="text-white" />
-              <p className="text-xl font-medium font-adamBold text-white">
+              <button className="text-xl font-medium font-adamBold text-white">
                 Fale conosco
-              </p>
+              </button>
             </a>
           </nav>
         </div>

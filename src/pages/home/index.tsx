@@ -1,11 +1,11 @@
 import { Header } from '@/components/globals/header';
-import { Slider } from '@/components/ui/slider';
+import { AboutUs } from './components/abouts-us';
 
 export function LandingPage() {
   return (
     <div>
       <Header />
-      <Slider />
+      <AboutUs />
     </div>
   );
 }
