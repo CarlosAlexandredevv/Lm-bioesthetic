@@ -52,44 +52,6 @@ export function MenuMobile() {
               >
                 <AccordionTrigger className="flex items-center justify-start gap-2 decoration p-0 text-xl font-medium font-adamBold text-white">
                   <span>
-                    <ShoppingBasket />
-                  </span>
-                  Produtos
-                </AccordionTrigger>
-
-                <AccordionContent className="flex flex-col gap-3">
-                  <AccordionItem
-                    value="item-2"
-                    className="border-none flex flex-col gap-3"
-                  >
-                    <NavLink
-                      to="/produtos/capilar"
-                      className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
-                    >
-                      Capilar
-                    </NavLink>
-                    <NavLink
-                      to="/produtos/facial"
-                      className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
-                    >
-                      Facial
-                    </NavLink>
-                    <NavLink
-                      to="/produtos/corporal"
-                      className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
-                    >
-                      Corporal
-                    </NavLink>
-                  </AccordionItem>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem
-                value="item-2"
-                className="border-none flex flex-col gap-3"
-              >
-                <AccordionTrigger className="flex items-center justify-start gap-2 decoration p-0 text-xl font-medium font-adamBold text-white">
-                  <span>
                     <Syringe />
                   </span>
                   Procedimentos
@@ -114,6 +76,44 @@ export function MenuMobile() {
                     </NavLink>
                     <NavLink
                       to="/procedimentos/corporal"
+                      className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
+                    >
+                      Corporal
+                    </NavLink>
+                  </AccordionItem>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-2"
+                className="border-none flex flex-col gap-3"
+              >
+                <AccordionTrigger className="flex items-center justify-start gap-2 decoration p-0 text-xl font-medium font-adamBold text-white">
+                  <span>
+                    <ShoppingBasket />
+                  </span>
+                  Produtos
+                </AccordionTrigger>
+
+                <AccordionContent className="flex flex-col gap-3">
+                  <AccordionItem
+                    value="item-2"
+                    className="border-none flex flex-col gap-3"
+                  >
+                    <NavLink
+                      to="/produtos/capilar"
+                      className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
+                    >
+                      Capilar
+                    </NavLink>
+                    <NavLink
+                      to="/produtos/facial"
+                      className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
+                    >
+                      Facial
+                    </NavLink>
+                    <NavLink
+                      to="/produtos/corporal"
                       className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
                     >
                       Corporal

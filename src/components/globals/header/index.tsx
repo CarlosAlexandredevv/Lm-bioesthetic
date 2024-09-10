@@ -28,6 +28,38 @@ export function Header() {
             </NavLink>
 
             <NavigationMenu>
+              <NavigationMenuList className="flex gap-5">
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>
+                    <a className="flex items-center gap-2 text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300">
+                      Procedimentos
+                    </a>
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="flex items-center flex-col gap-2 w-full px-4 py-3 bg-lightCream text-x text-burgundy font-medium font-adamBold">
+                    <NavLink
+                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-6 py-1 border-2 border-burgundy"
+                      to="/procedimentos/capilar"
+                    >
+                      Capilar
+                    </NavLink>
+                    <NavLink
+                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-6 py-1 border-2 border-burgundy"
+                      to="/produtos/facial"
+                    >
+                      Facial
+                    </NavLink>
+                    <NavLink
+                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-6 py-1 border-2 border-burgundy"
+                      to="/produtos/corporal"
+                    >
+                      Corporal
+                    </NavLink>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
+            <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
@@ -59,37 +91,6 @@ export function Header() {
               </NavigationMenuList>
             </NavigationMenu>
 
-            <NavigationMenu>
-              <NavigationMenuList className="flex gap-5">
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger>
-                    <a className="flex items-center gap-2 text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300">
-                      Procedimentos
-                    </a>
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="flex items-center flex-col gap-2 w-full px-4 py-3 bg-lightCream text-x text-burgundy font-medium font-adamBold">
-                    <NavLink
-                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-6 py-1 border-2 border-burgundy"
-                      to="/procedimentos/capilar"
-                    >
-                      Capilar
-                    </NavLink>
-                    <NavLink
-                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-6 py-1 border-2 border-burgundy"
-                      to="/produtos/facial"
-                    >
-                      Facial
-                    </NavLink>
-                    <NavLink
-                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-6 py-1 border-2 border-burgundy"
-                      to="/produtos/corporal"
-                    >
-                      Corporal
-                    </NavLink>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
             <NavLink
               to="/resultados"
               className="flex items-center text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300"
