@@ -1,6 +1,6 @@
 import { Card } from '@/components/ui/card';
 import { procedimentos } from './utils/data';
-import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 export function Procedures() {
   return (
@@ -18,12 +18,11 @@ export function Procedures() {
           <Card card={procedimento} key={procedimento.id} />
         ))}
       </div>
-      <Button
-        className="bg-sand p-3 font-adamBold text-burgundy font-bold rounded-full hover:scale-110 duration-300"
-        link="/procedimentos"
-      >
-        MAIS PROCEDIMENTOS
-      </Button>
+      <Link to="/procedimentos">
+        <button className="bg-sand p-3 font-adamBold text-burgundy font-bold rounded-full hover:scale-110 duration-300">
+          MAIS PROCEDIMENTOS
+        </button>
+      </Link>
     </section>
   );
 }
