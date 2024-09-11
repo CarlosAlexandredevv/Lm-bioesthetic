@@ -63,19 +63,19 @@ export function MenuMobile() {
                     className="border-none flex flex-col gap-3"
                   >
                     <NavLink
-                      to="/procedimentos/capilar"
+                      to="/procedimentos"
                       className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
                     >
                       Capilar
                     </NavLink>
                     <NavLink
-                      to="/procedimentos/facial"
+                      to="/procedimentos"
                       className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
                     >
                       Facial
                     </NavLink>
                     <NavLink
-                      to="/procedimentos/corporal"
+                      to="/procedimentos"
                       className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
                     >
                       Corporal
@@ -101,19 +101,19 @@ export function MenuMobile() {
                     className="border-none flex flex-col gap-3"
                   >
                     <NavLink
-                      to="/produtos/capilar"
+                      to="/produtos"
                       className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
                     >
                       Capilar
                     </NavLink>
                     <NavLink
-                      to="/produtos/facial"
+                      to="/produtos"
                       className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
                     >
                       Facial
                     </NavLink>
                     <NavLink
-                      to="/produtos/corporal"
+                      to="/produtos"
                       className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
                     >
                       Corporal
