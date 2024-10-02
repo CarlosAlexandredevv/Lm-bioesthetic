@@ -13,50 +13,50 @@ import preenchimentoImg from '@/assets/procedures/preenchimento.jpg';
 export const procedimentos: CardDTO[] = [
   {
     id: 1,
-    bg: clareamentoImg,
-    title: 'CLAREAMENTO',
-    message: `${BASE_MESSAGE_WPP}clareamento.`,
-  },
-  {
-    id: 2,
     bg: botoxImg,
     title: 'BOTOX',
     message: `${BASE_MESSAGE_WPP}Botox.`,
   },
   {
+    id: 2,
+    bg: preenchimentoImg,
+    title: 'PREENCHIMENTO',
+    message: `${BASE_MESSAGE_WPP}preenchimento`,
+  },
+  {
     id: 3,
+    bg: clareamentoImg,
+    title: 'CLAREAMENTO',
+    message: `${BASE_MESSAGE_WPP}clareamento.`,
+  },
+  {
+    id: 4,
     bg: detoxImg,
     title: 'DETOX',
     message: `${BASE_MESSAGE_WPP}Detox`,
   },
   {
-    id: 4,
+    id: 5,
     bg: estriasImg,
     title: 'ESTRIAS',
     message: `${BASE_MESSAGE_WPP}estrias`,
   },
   {
-    id: 5,
+    id: 6,
     bg: seborreiaImg,
     title: 'SEBORREIA',
     message: `${BASE_MESSAGE_WPP}seborreia`,
   },
   {
-    id: 6,
+    id: 7,
     bg: calvicieImg,
     title: 'CALVÍCIE',
     message: `${BASE_MESSAGE_WPP}calvície`,
   },
   {
-    id: 7,
+    id: 8,
     bg: peelingImg,
     title: 'PEELING',
     message: `${BASE_MESSAGE_WPP}Peeling`,
-  },
-  {
-    id: 8,
-    bg: preenchimentoImg,
-    title: 'PREENCHIMENTO',
-    message: `${BASE_MESSAGE_WPP}preenchimento`,
   },
 ];
