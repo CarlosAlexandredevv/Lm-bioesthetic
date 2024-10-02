@@ -3,7 +3,7 @@ import { ballons } from './utils/data';
 
 export function Doubts() {
   return (
-    <section className="min-h-[calc(100vh-9rem)] bg-sand flex flex-col items-center w-full  gap-6 p-6">
+    <section className="min-h-[calc(100vh-9rem)] bg-sand flex flex-col items-center w-full gap-6 p-6">
       <h1 className="text-burgundy font-adamBold font-bold text-3xl text-center italic min-w-64 max-w-96">
         Os tratamentos são para você que sentiu que:
       </h1>
