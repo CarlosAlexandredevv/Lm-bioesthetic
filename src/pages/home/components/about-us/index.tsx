@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import AboutImage from '../../../../assets/HeroLeilaMenezes.jpeg';
 
 export function AboutUs() {
@@ -21,7 +20,11 @@ export function AboutUs() {
             Nosso propósito é cuidar de você, respeitando a sua individualidade
             e os seus objetivos. "Sua pele em boas mãos"
           </p>
-          <Button link={mensagem}>QUERO SABER MAIS!</Button>
+          <a href={mensagem}>
+            <button className="bg-burgundy w-full px-16 py-3 rounded-full text-white font-bold hover:opacity-70 duration-300">
+              QUERO SABER MAIS!
+            </button>
+          </a>
         </div>
       </div>
 
