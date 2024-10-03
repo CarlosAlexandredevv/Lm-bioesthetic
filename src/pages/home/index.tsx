@@ -4,6 +4,7 @@ import { Procedures } from './components/procedures';
 import { Doubts } from './components/doubts-session';
 import { Results } from './components/results';
 import { Comments } from './components/comments';
+import { FAQ } from './components/faq';
 
 export function LandingPage() {
   return (
@@ -14,6 +15,7 @@ export function LandingPage() {
       <Doubts />
       <Results />
       <Comments />
+      <FAQ />
     </div>
   );
 }
