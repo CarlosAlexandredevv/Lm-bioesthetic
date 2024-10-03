@@ -3,6 +3,7 @@ import { AboutUs } from './components/about-us';
 import { Procedures } from './components/procedures';
 import { Doubts } from './components/doubts-session';
 import { Results } from './components/results';
+import { Comments } from './components/comments';
 
 export function LandingPage() {
   return (
@@ -12,6 +13,7 @@ export function LandingPage() {
       <Procedures />
       <Doubts />
       <Results />
+      <Comments />
     </div>
   );
 }
