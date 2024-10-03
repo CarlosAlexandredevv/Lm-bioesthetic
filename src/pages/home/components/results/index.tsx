@@ -14,7 +14,7 @@ export function Results() {
   return (
     <section
       id="resultados"
-      className="h-screen sm:h-auto bg-lightCream flex flex-col items-center w-full p-6 gap-8"
+      className="h-auto bg-lightCream flex flex-col items-center w-full p-6 gap-8"
     >
       <h1 className="text-darkRose font-adamBold font-bold text-3xl text-center italic min-w-64 max-w-96">
         Os resultados que esperam por você:

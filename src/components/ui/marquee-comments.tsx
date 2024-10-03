@@ -96,8 +96,8 @@ const ReviewCard = ({
 
 export function MarqueeComments() {
   return (
-    <div className="relative flex h-screen sm:h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-burgundy md:shadow-xl">
-      <h1 className="absolute sm:top-2 top-8 text-sand font-adamBold font-bold text-3xl text-center italic min-w-64 max-w-96">
+    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-burgundy md:shadow-xl">
+      <h1 className="absolute  top-2 text-sand font-adamBold font-bold text-3xl text-center italic min-w-64 max-w-96">
         O que nossos clientes acham da gente:
       </h1>
 
