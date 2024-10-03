@@ -77,3 +77,7 @@
 .active {
   color: #d8b38d;
 }
+
+html {
+  scrollbar-color: #62162f #fff;
+}

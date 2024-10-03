@@ -20,7 +20,7 @@ export function AboutUs() {
             Nosso propósito é cuidar de você, respeitando a sua individualidade
             e os seus objetivos. "Sua pele em boas mãos"
           </p>
-          <a href={mensagem}>
+          <a href={mensagem} target="_blank">
             <button className="bg-burgundy w-full px-12 py-3 rounded-full text-white font-bold hover:opacity-70 duration-300">
               QUERO SABER MAIS!
             </button>

@@ -2,7 +2,6 @@ import {
   HeartHandshake,
   House,
   Menu,
-  ShoppingBasket,
   Stethoscope,
   Syringe,
 } from 'lucide-react';
@@ -83,55 +82,20 @@ export function MenuMobile() {
                   </AccordionItem>
                 </AccordionContent>
               </AccordionItem>
-
-              <AccordionItem
-                value="item-2"
-                className="border-none flex flex-col gap-3"
-              >
-                <AccordionTrigger className="flex items-center justify-start gap-2 decoration p-0 text-xl font-medium font-adamBold text-white">
-                  <span>
-                    <ShoppingBasket />
-                  </span>
-                  Produtos
-                </AccordionTrigger>
-
-                <AccordionContent className="flex flex-col gap-3">
-                  <AccordionItem
-                    value="item-2"
-                    className="border-none flex flex-col gap-3"
-                  >
-                    <NavLink
-                      to="/produtos"
-                      className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
-                    >
-                      Capilar
-                    </NavLink>
-                    <NavLink
-                      to="/produtos"
-                      className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
-                    >
-                      Facial
-                    </NavLink>
-                    <NavLink
-                      to="/produtos"
-                      className="flex items-center justify-start gap-2 decoration p-0 text-lg font-medium font-adamBold text-white"
-                    >
-                      Corporal
-                    </NavLink>
-                  </AccordionItem>
-                </AccordionContent>
-              </AccordionItem>
             </Accordion>
 
-            <NavLink
-              to="resultados"
-              className="flex items-center gap-2 text-xl font-medium font-adamBold text-white"
-            >
-              <span>
-                <HeartHandshake />
-              </span>
-              Resultados
-            </NavLink>
+            <SheetTrigger>
+              <a
+                href="#resultados"
+                className="flex items-center gap-2 text-xl font-medium font-adamBold text-white"
+              >
+                <span>
+                  <HeartHandshake />
+                </span>
+                Resultados
+              </a>
+            </SheetTrigger>
+
             <NavLink
               to="leilamenezes"
               className="flex items-center gap-2 text-xl font-medium font-adamBold text-white"

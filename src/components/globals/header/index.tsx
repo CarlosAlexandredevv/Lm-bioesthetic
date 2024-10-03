@@ -62,47 +62,12 @@ export function Header() {
               </NavigationMenuList>
             </NavigationMenu>
 
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger>
-                    <NavLink
-                      to="/produtos"
-                      className="flex items-center gap-2 text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300"
-                    >
-                      Produtos
-                    </NavLink>
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="flex items-center flex-col gap-2 w-full px-2 py-3 bg-lightCream text-x text-burgundy font-medium font-adamBold">
-                    <NavLink
-                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-2 py-1 border-2 border-burgundy"
-                      to="/produtos"
-                    >
-                      Capilar
-                    </NavLink>
-                    <NavLink
-                      className="w-full text-center hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-2 py-1  border-2 border-burgundy"
-                      to="/produtos"
-                    >
-                      Facial
-                    </NavLink>
-                    <NavLink
-                      className="hover:bg-burgundy hover:text-lightCream rounded-md duration-300 px-2 py-1  border-2 border-burgundy"
-                      to="/produtos"
-                    >
-                      Corporal
-                    </NavLink>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
-
-            <NavLink
-              to="/resultados"
+            <a
+              href="#resultados"
               className="flex items-center text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300"
             >
               Resultados
-            </NavLink>
+            </a>
             <NavLink
               to="/leilamenezes"
               className="flex items-center  text-xl font-medium font-adamBold text-white hover:opacity-70 duration-300"
