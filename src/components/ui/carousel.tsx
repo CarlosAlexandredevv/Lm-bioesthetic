@@ -3,6 +3,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -49,7 +50,7 @@ const Carousel = React.forwardRef<
       orientation = 'horizontal',
       opts,
       setApi,
-      plugins,
+      plugins = [],
       className,
       children,
       ...props
@@ -61,7 +62,7 @@ const Carousel = React.forwardRef<
         ...opts,
         axis: orientation === 'horizontal' ? 'x' : 'y',
       },
-      plugins,
+      [Autoplay({ delay: 2000 }), ...plugins],
     );
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
     const [canScrollNext, setCanScrollNext] = React.useState(false);
