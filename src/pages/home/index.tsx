@@ -5,6 +5,7 @@ import { Doubts } from './components/doubts-session';
 import { Results } from './components/results';
 import { Comments } from './components/comments';
 import { FAQ } from './components/faq';
+import { Footer } from '@/components/globals/footer';
 
 export function LandingPage() {
   return (
@@ -16,6 +17,7 @@ export function LandingPage() {
       <Results />
       <Comments />
       <FAQ />
+      <Footer />
     </div>
   );
 }
